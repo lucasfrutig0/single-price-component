@@ -1,0 +1,240 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  background-color: #e5eff5;
+  font-family: "Karla", sans-serif;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.price-component {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-component header {
+  background-color: white;
+  width: 100%;
+  padding: 5rem;
+  max-width: 700px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.price-component header h3 {
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2ab2af;
+}
+
+.price-component header h4 {
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #c0df34;
+}
+
+.price-component header p {
+  color: #98a6bd;
+}
+
+.price-component .content {
+  width: 100%;
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #2ab2af;
+  -webkit-box-shadow: 0px 5px 9px 1px rgba(93, 113, 146, 0.6);
+          box-shadow: 0px 5px 9px 1px rgba(93, 113, 146, 0.6);
+}
+
+.price-component .content .call-to-action {
+  width: 350px;
+  background-color: rgba(37, 157, 155, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4.5rem;
+  border-bottom-left-radius: 10px;
+  color: #e5eff5;
+}
+
+.price-component .content .call-to-action h4 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.price-component .content .call-to-action p {
+  color: rgba(229, 239, 245, 0.5);
+}
+
+.price-component .content .call-to-action span.price {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-right: 10px;
+  color: #e5eff5;
+}
+
+.price-component .content .call-to-action small {
+  margin: 5px 0;
+}
+
+.price-component .content .call-to-action button {
+  width: 100%;
+  max-width: 220px;
+  display: block;
+  border: none;
+  margin-top: 20px;
+  background-color: #c0df34;
+  color: white;
+  padding: 1.2rem;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 4px 7px 2px rgba(93, 113, 146, 0.9);
+          box-shadow: 0px 4px 7px 2px rgba(93, 113, 146, 0.9);
+  cursor: pointer;
+}
+
+.price-component .content .why-us {
+  width: 350px;
+  background-color: #2ab2af;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #e5eff5;
+}
+
+.price-component .content .why-us .why-us--title {
+  margin-top: 40px;
+  margin-left: 40px;
+  font-size: 2rem;
+}
+
+.price-component .content .why-us ul {
+  list-style: none;
+  margin: 20px, 0, 0, 20px;
+}
+
+@media (max-width: 680px) {
+  .content {
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+  }
+  .call-to-action {
+    border-bottom-left-radius: none;
+    width: 100% !important;
+  }
+  .price-component {
+    margin: 0 auto;
+    padding: 1.6rem;
+    padding-top: 1.6rem;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

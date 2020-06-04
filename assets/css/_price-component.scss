@@ -1,0 +1,125 @@
+.price-component {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  header {
+    background-color: white;
+    width: 100%;
+    padding: 5rem;
+    max-width: 700px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    h3 {
+      margin-bottom: 1.6rem;
+      font-size: 2rem;
+      font-weight: 700;
+      color: $primary-cyan;
+    }
+
+    h4 {
+      margin-bottom: 8px;
+      font-weight: 700;
+      color: $primary-bright-yellow;
+    }
+
+    p {
+      color: $neutral-grayish-blue;
+    }
+  }
+
+  .content {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: $primary-cyan;
+    box-shadow: 0px 5px 9px 1px hsla(218, 22%, 47%, 0.6);
+
+    .call-to-action {
+      width: 350px;
+      background-color: hsla(179, 62%, 38%, 0.5);
+      display: flex;
+      flex-direction: column;
+      padding: 4.5rem;
+      border-bottom-left-radius: 10px;
+      color: $neutral-light-gray;
+
+      h4 {
+        margin-bottom: 10px;
+        font-size: 2rem;
+      }
+
+      p {
+        color: hsla(204, 43%, 93%, 0.5);
+      }
+
+      span.price {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-right: 10px;
+        color: $neutral-light-gray;
+      }
+
+      small {
+        margin: 5px 0;
+      }
+
+      button {
+        width: 100%;
+        max-width: 220px;
+        display: block;
+        border: none;
+        margin-top: 20px;
+        background-color: $primary-bright-yellow;
+        color: white;
+        padding: 1.2rem;
+        border-radius: 6px;
+        box-shadow: 0px 4px 7px 2px hsla(218, 22%, 47%, 0.9);
+        cursor: pointer;
+      }
+    }
+
+    .why-us {
+      width: 350px;
+      background-color: $primary-cyan;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      color: $neutral-light-gray;
+
+      .why-us--title {
+        margin-top: 40px;
+        margin-left: 40px;
+        font-size: 2rem;
+      }
+
+      ul {
+        list-style: none;
+        margin: 20px, 0, 0, 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .content {
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+  }
+  .call-to-action {
+    border-bottom-left-radius: none;
+    width: 100% !important;
+  }
+
+  .price-component {
+    margin: 0 auto;
+    padding: 1.6rem;
+    padding-top: 1.6rem;
+    height: 100%;
+  }
+}
