@@ -221,6 +221,20 @@ select {
   margin: 20px, 0, 0, 20px;
 }
 
+.price-component footer {
+  margin-top: 20px;
+}
+
+.price-component footer p.attribution a {
+  color: #259d9b;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+.price-component footer p.attribution a:hover {
+  color: #2ab2af;
+}
+
 @media (max-width: 680px) {
   .content {
     border-bottom-left-radius: none;

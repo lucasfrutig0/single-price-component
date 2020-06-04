@@ -104,6 +104,17 @@
       }
     }
   }
+  footer {
+    margin-top: 20px;
+
+    p.attribution a {
+      color: $primary-dark-cyan;
+      transition: color 0.3s ease-in;
+      &:hover {
+        color: $primary-cyan;
+      }
+    }
+  }
 }
 
 @media (max-width: 680px) {
